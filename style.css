@@ -1,0 +1,36 @@
+nav
+{
+	width:100%;
+	float:center;
+	background-color:#ffffff;
+	opacity:1;
+	border-radius:10px;
+	font-family: 'Verdana';
+	font-size: x-large;
+	color:#4a95cf;
+	
+}
+.navbar
+{
+	background-color:green;
+}
+ul
+{
+	list-style-type:none;
+	text-align:center;
+}
+li
+{
+	display:inline-block;
+	
+	
+}
+
+
+table
+{
+	text-align:center;
+}
+
+
+
