@@ -1,3 +1,3 @@
 # ERP-Mines-Etudes-et-Projets
 
-![Alt text](/ERP-Mines-Etudes-et-Projets/Screenshots/Screenshot_1.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/gregoiremassot/ERP-Mines-Etudes-et-Projets/blob/master/Screenshots/Screenshot_1.PNG?raw=true "Optional Title")
