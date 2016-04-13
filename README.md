@@ -1,7 +1,1 @@
-![Alt text](https://github.com/gregoiremassot/ERP-Mines-Etudes-et-Projets/blob/master/Screenshots/Screenshot_1.PNG?raw=true "Optional Title")
-
-# ERP Mines Etudes et Projets
-
-Voici le code de l'ERP que j'ai codé lors de l'été 2014 pour la Junior-Entreprise de l'école des Mines de Saint-Etienne (mep-je.fr).
-
-L'outil sera bientôt disponible en ligne
+#[Page d'accueil](https://github.com/gregoiremassot/ERP-Mines-Etudes-et-Projets/wiki/Bienvenue-sur-le-d%C3%A9p%C3%B4t-%22ERP-Mines-Etudes-et-Projets%22-!) / [Home page](https://github.com/gregoiremassot/ERP-Mines-Etudes-et-Projets/wiki/Welcome-to-the-repository-%22ERP-Mines-%C3%89tudes-et-Projets%22-!)
