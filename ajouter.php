@@ -85,52 +85,52 @@
 
 		<div class="col-md-6 col-md-offset-3">
 			<p>
-				<form method="post" action="ajouter1.php?id=<?php echo $_GET['id'];?>">
+				<form method="post" action="ajouter1.php">
 				<legend>Ajouter une étude</legend >
 				<div class ="tab-pane fade active in" id="Fiche"></div>
 					<label for="Nom">Nom de l'étude </label>
-					<textarea name="Nom" class="form-control" rows="1" cols="20"><?php echo $donnes['Name'];?></textarea>
+					<textarea name="Nom" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Reference">Référence </label>
-					<textarea name="Reference" class="form-control" rows="1" cols="20"><?php echo $donnes['Reference'];?></textarea>
+					<textarea name="Reference" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="BriefDescription">Descritption brève </label>
-					<textarea name="BriefDescription" class="form-control" rows="10" cols="20"><?php echo $donnes['BriefDescription'];?></textarea>
+					<textarea name="BriefDescription" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Commercial">Commercial : </label>
-					<textarea name="Commercial" class="form-control" rows="1" cols="20"><?php echo $donnes['Commercial'];?></textarea>
+					<textarea name="Commercial" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Suiveur">Suiveur : </label>
-					<textarea name="Suiveur" class="form-control" rows="1" cols="20"><?php echo $donnes['Suiveur'];?></textarea>
+					<textarea name="Suiveur" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Qualite">Qualité : </label>
-					<textarea name="Qualite" class="form-control" rows="1" cols="20"><?php echo $donnes['Qualite'];?></textarea>
+					<textarea name="Qualite" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="TypeClient">Type de Client : </label>
-					<textarea name="TypeClient" class="form-control" rows="1" cols="20"><?php echo $donnes['TypeClient'];?></textarea>
+					<textarea name="TypeClient" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Contact">Contact : </label>
-					<textarea name="Contact" class="form-control" rows="1" cols="20"><?php echo $donnes['Contact'];?></textarea>
+					<textarea name="Contact" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Signataire">Signataire : </label>
-					<textarea name="Signataire" class="form-control" rows="1" cols="20"><?php echo $donnes['Signataire'];?></textarea>
+					<textarea name="Signataire" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Payeur">Payeur : </label>
-					<textarea name="Payeur" class="form-control" rows="1" cols="20"><?php echo $donnes['Payeur'];?></textarea>
+					<textarea name="Payeur" class="form-control" rows="1" cols="20"></textarea>
 					
 					<label for="Contexte">Contexte :</label>
-					<textarea name="Contexte" class="form-control" rows="10" cols="20"><?php echo $donnes['Contexte'];?></textarea>
+					<textarea name="Contexte" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Problematique">Problématique :</label>
-					<textarea name="Problematique" class="form-control" rows="10" cols="20"><?php echo $donnes['Problematique'];?></textarea>
+					<textarea name="Problematique" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Objectif">Objectif :</label>
-					<textarea name="Objectif" class="form-control" rows="10" cols="20"><?php echo $donnes['Objectif'];?></textarea>
+					<textarea name="Objectif" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Domaine">Domaine : </label>
 					
 					<select name="Domaine"  class="form-control">
-					<option><?php echo $donnes['Domaine'];?></option>
+					<option></option>
 					<option>Informatique</option>
 					<option>Mécanique</option>
 					<option>Traduction Technique</option>
@@ -143,14 +143,14 @@
 					
 					<label for="Mandat">Mandat :</label>
 					<select name="Mandat"  class="form-control">
-					<option><?php echo $donnes['Mandat'];?></option>
+					<option></option>
 					<option>2013</option>
 					<option>2014</option>
 					</select>
 					
 					<label for="Deontologie">Deontologie :</label>
 					<select name="Deontologie"  class="form-control">
-					<option><?php echo $donnes['Deontologie'];?></option>
+					<option></option>
 					<option>oui</option>
 					<option>En attente OK qualite</option>
 					<option>non</option>
@@ -158,7 +158,7 @@
 					
 					<label for="ConfidentialiteAbsolue">Confidentialité Absolue :</label>
 					<select name="ConfidentialiteAbsolue"  class="form-control">
-					<option><?php echo $donnes['ConfidentialiteAbsolue'];?></option>
+					<option></option>
 					<option>oui</option>
 					<option>non</option>
 					</select>
@@ -166,22 +166,22 @@
 		
 					
 					<label for="BienUneEtude">Pourquoi est-ce bien une étude ? :</label>
-					<textarea name="BienUneEtude" class="form-control" rows="10" cols="20"><?php echo $donnes['BienUneEtude'];?></textarea>
+					<textarea name="BienUneEtude" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Analyse">En quoi l’analyse et la technicité sont suffisantes ? :</label>
-					<textarea name="Analyse" class="form-control" rows="10" cols="20"><?php echo $donnes['Analyse'];?></textarea>
+					<textarea name="Analyse" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="MaitreOeuvre">MEP reste-t-elle bien maître d’œuvre ? :</label>
-					<textarea name="MaitreOeuvre" class="form-control" rows="10" cols="20"><?php echo $donnes['MaitreOeuvre'];?></textarea>
+					<textarea name="MaitreOeuvre" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Logiciels">L’étude nécessite-t-elle des logiciels spécifiques ? Si oui avons-nous les licences commerciales ? :</label>
-					<textarea name="Logiciels" class="form-control" rows="10" cols="20"><?php echo $donnes['Logiciels'];?></textarea>
+					<textarea name="Logiciels" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Cnil">Y a-t-il des bases de données nominatives à déclarer à la CNIL ? :</label>
-					<textarea name="Cnil" class="form-control" rows="10" cols="20"><?php echo $donnes['Cnil'];?></textarea>
+					<textarea name="Cnil" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Commentaires">Commentaires :</label>
-					<textarea name="Commentaires" class="form-control" rows="10" cols="20"><?php echo $donnes['Commentaires'];?></textarea>
+					<textarea name="Commentaires" class="form-control" rows="10" cols="20"></textarea>
 					
 					<br />
 					<div class ="tab-pane fade" id="Avancement"></div >
@@ -191,18 +191,14 @@
 					<td><label for="AP">Avant Projet :</label></td>
 					<td>
 					
-					 <input type="radio" name="AP" value=1 
-							<?php if ($donnes['AP']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="AP" value=0 
-					<?php if ($donnes['AP']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="AP" value=3 <?php if ($donnes['AP']==3){?> checked <?php }?>/> En attente OK qualité </p>
+					 <input type="radio" name="AP" value=1 /> Oui
+					<input type="radio" name="AP" value=0 /> Non  
+					<input type="radio" name="AP" value=3/> En attente OK qualité </p>
 					</select>
 					</td>
 					<td>
 					
-					 <input type="date" name="DateAP" value="<?php if($donnes['DateAP']>'0000-00-01')
-												{ echo $donnes['DateAP'];}
-												?>"/>
+					 <input type="date" name="DateAP" value=""/>
 												
 												</td>
 												</tr>
@@ -212,11 +208,9 @@
 					<td><label for="CC">Convention Client :</label></td>
 					<td>
 					
-					 <input type="radio" name="CC" value=1 
-							<?php if ($donnes['CC']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="CC" value=0 
-					<?php if ($donnes['CC']==0){?> checked <?php }?>/> Non 
-<input type="radio" name="CC" value=3 <?php if ($donnes['CC']==3){?> checked <?php }?>/> En attente OK qualité					</p>
+					 <input type="radio" name="CC" value=1 /> Oui
+						<input type="radio" name="CC" value=0 /> Non 
+<input type="radio" name="CC" value=3/> En attente OK qualité</p>
 					</select>
 					</td>
 					<td>
