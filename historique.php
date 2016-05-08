@@ -1,5 +1,5 @@
 <?php session_start();
-	$bdd1 = new PDO('mysql:host=mySQL5-3.perso;dbname=mepjejoomla', 'mepjejoomla', '392144JE', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+	$bdd1 = new PDO('mysql:host=localhost;dbname=erp', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 						
 						$reponse1 = $bdd1->query("SELECT password AS password FROM connexion WHERE login = '".$_SESSION['nom']."';");
 						
@@ -38,13 +38,13 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="http://mep-je.fr/ERP2/etudes.php">Etudes en cours</a></li>
-				<li><a href="http://mep-je.fr/ERP2/ajouter.php">Ajouter une étude</a></li>
-				<li><a href="http://mep-je.fr/ERP2/rechercher.php">Rechercher une étude</a></li>
-				<li><a href="http://mep-je.fr/ERP2/historique.php">Historique des modifications</a></li>
-				<li><a href="http://mep-je.fr/ERP2/historique_connexions.php">Historique des connexions</a></li>
-				<li><a href="http://mep-je.fr/ERP2/deconnexion.php">Déconnexion</a></li>
-				<li><a href="http://mep-je.fr/ERP2/passwd.php">Changer de mot de passe</a></li>
+				<li><a href="http://127.0.0.1/ERP/etudes.php">Etudes en cours</a></li>
+				<li><a href="http://127.0.0.1/ERP/ajouter.php">Ajouter une étude</a></li>
+				<li><a href="http://127.0.0.1/ERP/rechercher.php">Rechercher une étude</a></li>
+				<li><a href="http://127.0.0.1/ERP/historique.php">Historique des modifications</a></li>
+				<li><a href="http://127.0.0.1/ERP/historique_connexions.php">Historique des connexions</a></li>
+				<li><a href="http://127.0.0.1/ERP/deconnexion.php">Déconnexion</a></li>
+				<li><a href="http://127.0.0.1/ERP/passwd.php">Changer de mot de passe</a></li>
 				
 			</ul>
 		</nav>
@@ -65,7 +65,7 @@
 				<?php
 					try
 					{
-						$bdd = new PDO('mysql:host=mySQL5-3.perso;dbname=mepjejoomla', 'mepjejoomla', '392144JE', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+						$bdd = new PDO('mysql:host=localhost;dbname=erp', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 						
 						
 						

@@ -1,5 +1,5 @@
 <?php session_start();
-	$bdd1 = new PDO('mysql:host=mySQL5-3.perso;dbname=mepjejoomla', 'mepjejoomla', '392144JE', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+	$bdd1 = new PDO('mysql:host=localhost;dbname=erp', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 						
 						$reponse1 = $bdd1->query("SELECT password AS password FROM connexion WHERE login = '".$_SESSION['nom']."';");
 						
@@ -28,7 +28,7 @@
 					try
 					{
 						
-						$bdd = new PDO('mysql:host=mySQL5-3.perso;dbname=mepjejoomla', 'mepjejoomla', '392144JE', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+						$bdd = new PDO('mysql:host=localhost;dbname=erp', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 						if($_GET['id'] != NULL)
 						{
 						$reponse = $bdd->query("SELECT * FROM document WHERE id=".$_GET['id']."");
@@ -55,10 +55,10 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="http://mep-je.fr/test/etudes.php">Etudes en cours</a></li>
-				<li><a href="http://mep-je.fr/test/ajouter.php">Ajouter une étude</a></li>
-				<li><a href="http://mep-je.fr/test/rechercher.php">Rechercher une étude</a></li>
-				<li><a href="http://mep-je.fr/test/historique.php">Historique des modifications</a></li>
+				<li><a href="http://127.0.0.1/test/etudes.php">Etudes en cours</a></li>
+				<li><a href="http://127.0.0.1/test/ajouter.php">Ajouter une étude</a></li>
+				<li><a href="http://127.0.0.1/test/rechercher.php">Rechercher une étude</a></li>
+				<li><a href="http://127.0.0.1/test/historique.php">Historique des modifications</a></li>
 				
 				
 			</ul>
