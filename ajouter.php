@@ -94,7 +94,15 @@
 					<label for="Reference">Référence </label>
 					<textarea name="Reference" class="form-control" rows="1" cols="20"></textarea>
 					
-					<label for="BriefDescription">Descritption brève </label>
+					<label for="DebutDate">Date de Début </label>
+					<input type="date" name="DebutDate" value=""/>
+					
+					<label for="FinDate">Date de Fin </label>
+					<input type="date" name="FinDate" value=""/>
+					
+					<br />
+					
+					<label for="BriefDescription">Description brève </label>
 					<textarea name="BriefDescription" class="form-control" rows="10" cols="20"></textarea>
 					
 					<label for="Commercial">Commercial : </label>
@@ -316,73 +324,47 @@
 					<input type="radio" name="PVI" value=3 /> En attente OK qualité </p>
 					</select>
 				</td>
+				
+				<td><input type="date" name="DatePVI" value=""/></td>
+				</tr>
+				<tr>
+				<td><label for="FI">Facture intermédiaire :</label></td>
 				<td>
-					
-					 <input type="date" name="DatePVI" value="<?php if($donnes['DatePVI']>'0000-00-01')
-												{ echo $donnes['DatePVI'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												<tr>
-												<td><label for="FI">Facture intermédiaire :</label></td>
-					<td>
-					
-					 <input type="radio" name="FI" value=3 
-							<?php if ($donnes['FI']==1){?> checked <?php }?>/> Oui
-						<input type="radio" name="FI" value=0 
-					<?php if ($donnes['FI']==0){?> checked <?php }?>/> Non 
-<input type="radio" name="FI" value=3 <?php if ($donnes['FI']==3){?> checked <?php }?>/> En attente OK comptable					</p>
+					<input type="radio" name="FI" value=3 /> Oui
+					<input type="radio" name="FI" value=0 /> Non 
+					<input type="radio" name="FI" value=3 /> En attente OK comptable</p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateFI" value="<?php if($donnes['DateFI']>'0000-00-01')
-												{ echo $donnes['DateFI'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												<tr>
-												<td><label for="Avenant">Avenant :</label></td>
-					<td>
-					
-					 <input type="radio" name="Avenant" value=3 
-							<?php if ($donnes['Avenant']==1){?> checked <?php }?>/> Oui
-						<input type="radio" name="Avenant" value=0 
-					<?php if ($donnes['Avenant']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="Avenant" value=3 <?php if ($donnes['Avenant']==3){?> checked <?php }?>/> En attente OK qualité</p>
-					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateAV" value="<?php if($donnes['DateAV']>'0000-00-01')
-												{ echo $donnes['DateAV'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												</table>
-									<label for="AVDescription">Raisons de l'avenant :</label>
-					<textarea name="AVDescription" class="form-control" rows="10" cols="20"><?php echo $donnes['AVDescription'];?></textarea>			
-												<br />
-												<table class="table table-bordered table-striped table-condensed">
+				</td>
+				<td><input type="date" name="DateFI" value=""/></td>
+				</tr>
+				<tr>
+				<td><label for="Avenant">Avenant :</label></td>
+				<td>
+					<input type="radio" name="Avenant" value=3 /> Oui
+					<input type="radio" name="Avenant" value=0 /> Non  
+					<input type="radio" name="Avenant" value=3 /> En attente OK qualité</p>
+				</select>
+				</td>
+				<td>
+					<input type="date" name="DateAV" value=""/></td>
+				</tr>
+				</table>
+				<label for="AVDescription">Raisons de l'avenant :</label>
+				<textarea name="AVDescription" class="form-control" rows="10" cols="20"></textarea>			
+				<br />
+				<table class="table table-bordered table-striped table-condensed">
 					<tr>
 					<td><label for="Echec">Echec :</label></td>
 					<td>
-					
-					 <input type="radio" name="Echec" value=1 
-							<?php if ($donnes['Echec']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="Echec" value=0 
-					<?php if ($donnes['Echec']==0){?> checked <?php }?>/> Non  </p>
-					</select>
+						<input type="radio" name="Echec" value=1 /> Oui
+						<input type="radio" name="Echec" value=0 /> Non  </p>
+						</select>
 					</td>
 					</table>
 												
-												<label for="QE">Questionnaire echec :</label>
-					<textarea name="QE" class="form-control" rows="10" cols="20"><?php echo $donnes['QE'];?></textarea>
-												
-												
+					<label for="QE">Questionnaire echec :</label>
+					<textarea name="QE" class="form-control" rows="10" cols="20"></textarea>
+																	
 					<input type="submit" value="Envoyer" id="Envoyer" class="btn btn-primary">
 					
 				</form>

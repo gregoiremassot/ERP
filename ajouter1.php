@@ -52,7 +52,7 @@
 		$_POST['Contact']= mysqli_real_escape_string($bdd, $_POST['Contact']);
 	
 						
-						$reponse = mysqli_query($bdd, "INSERT INTO document (Name, Commercial, Suiveur, TypeClient, Signataire, Payeur, Contexte, Problematique, Objectif, Domaine, BienUneEtude, Analyse, MaitreOeuvre, Logiciels, Contact, Cnil,
+						/*$reponse = mysqli_query($bdd, "INSERT INTO document (Name, Commercial, Suiveur, TypeClient, Signataire, Payeur, Contexte, Problematique, Objectif, Domaine, BienUneEtude, Analyse, MaitreOeuvre, Logiciels, Contact, Cnil,
 						AP, DateAP, CE, DateCE, CC, DateCC, RDM, DateRDM, PVF, DatePVF, FS, DateFS, RP, DateRP, BV, DateBV, PVI, DatePVI, FI, DateFI, Avenant, AVDescription, DateAV,
 						Deontologie, ConfidentialiteAbsolue, Qualite, Mandat, QE, QSC, DateQSC, QSCrempli, Echec, Commentaires, Reference, BriefDescription, FDA,
 						DateFDA) 
@@ -109,6 +109,30 @@
 						'".$_POST['BriefDescription']."',
 						'".$_POST['FDA']."',
 						'".$_POST['DateFDA']."'
+						);");*/
+						$reponse = mysqli_query($bdd, "INSERT INTO document (Name, Reference, DebutDate, FinDate, BriefDescription, Commercial, Suiveur, Qualite, TypeClient,
+						Contact, Signataire, Payeur, Contexte, Problematique, Objectif, Domaine, Mandat, Deontologie, ConfidentialiteAbsolue, BienUneEtude
+						) VALUES 
+						('".$_POST['Nom']."',
+						'".$_POST['Reference']."',
+						'".$_POST['DebutDate']."',
+						'".$_POST['FinDate']."',
+						'".$_POST['BriefDescription']."',
+						'".$_POST['Commercial']."',
+						'".$_POST['Suiveur']."',
+						'".$_POST['Qualite']."',
+						'".$_POST['TypeClient']."',
+						'".$_POST['Contact']."',
+						'".$_POST['Signataire']."',
+						'".$_POST['Payeur']."',
+						'".$_POST['Contexte']."',
+						'".$_POST['Problematique']."',
+						'".$_POST['Objectif']."',
+						'".$_POST['Domaine']."',
+						'".$_POST['Mandat']."',
+						'".$_POST['Deontologie']."',
+						'".$_POST['ConfidentialiteAbsolue']."',
+						'".$_POST['BienUneEtude']."'
 						);");
 						$reponse2 = mysqli_query($bdd, "INSERT INTO historique (login, date, action)
 							VALUES ( '".$_SESSION['nom']."', NOW(), 'Ajout de ".$_POST['Nom']." ');");
