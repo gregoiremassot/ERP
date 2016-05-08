@@ -191,7 +191,7 @@
 					<td><label for="AP">Avant Projet :</label></td>
 					<td>
 					
-					 <input type="radio" name="AP" value=1 /> Oui
+					<input type="radio" name="AP" value=1 /> Oui
 					<input type="radio" name="AP" value=0 /> Non  
 					<input type="radio" name="AP" value=3/> En attente OK qualité </p>
 					</select>
@@ -204,205 +204,119 @@
 												</tr>
 												
 												
-												<tr>
+				<tr>
 					<td><label for="CC">Convention Client :</label></td>
 					<td>
-					
 					 <input type="radio" name="CC" value=1 /> Oui
-						<input type="radio" name="CC" value=0 /> Non 
-<input type="radio" name="CC" value=3/> En attente OK qualité</p>
+					 <input type="radio" name="CC" value=0 /> Non 
+					 <input type="radio" name="CC" value=3/> En attente OK qualité</p>
 					</select>
 					</td>
-					<td>
-					
-					 <input type="date" name="DateCC" value="<?php if($donnes['DateCC']>'0000-00-01')
-												{ echo $donnes['DateCC'];}
-												?>"/>
+					<td><input type="date" name="DateCC" value=""/></td>
+			    </tr>
 												
-												</td>
-												</tr>
-												
-												<tr>
+				<tr>
 					<td><label for="CE">Convention Etudiant :</label></td>
 					<td>
-					
-					 <input type="radio" name="CE" value=1 
-							<?php if ($donnes['CE']==1){?> checked <?php }?>/> Oui
-						<input type="radio" name="CE" value=0 
-					<?php if ($donnes['CE']==0){?> checked <?php }?>/> Non 
-					 <input type="radio" name="CE" value=3 <?php if ($donnes['CE']==3){?> checked <?php }?>/> En attente OK qualité </p>
+					<input type="radio" name="CE" value=1/> Oui
+					<input type="radio" name="CE" value=0/> Non 
+					<input type="radio" name="CE" value=3/> En attente OK qualité </p>
 					</select>
 					</td>
-					<td>
 					
-					 <input type="date" name="DateCE" value="<?php if($donnes['DateCE']>'0000-00-01')
-												{ echo $donnes['DateCE'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												
-												<td><label for="RDM">Récapitulatif de mission :</label></td>
 					<td>
-					
-					 <input type="radio" name="RDM" value=1 
-							<?php if ($donnes['RDM']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="RDM" value=0 
-					<?php if ($donnes['RDM']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="RDM" value=3 <?php if ($donnes['RDM']==3){?> checked <?php }?>/> En attente OK qualité</p>
-					</select>
+					<input type="date" name="DateCE" value=""/>							
 					</td>
-					<td>
-					
-					 <input type="date" name="DateRDM" value="<?php if($donnes['DateRDM']>'0000-00-01')
-												{ echo $donnes['DateRDM'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												
-												<td><label for="PVF">PVRF :</label></td>
-					<td>
-					
-					 <input type="radio" name="PVF" value=1 
-							<?php if ($donnes['PVF']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="PVF" value=0 
-					<?php if ($donnes['PVF']==0){?> checked <?php }?>/> Non 
-<input type="radio" name="PVF" value=3 <?php if ($donnes['PVF']==3){?> checked <?php }?>/> En attente OK qualité					</p>
+				</tr>
+											
+				<td><label for="RDM">Récapitulatif de mission :</label></td>
+				<td>	
+					<input type="radio" name="RDM" value=1 /> Oui
+					<input type="radio" name="RDM" value=0/> Non  
+					<input type="radio" name="RDM" value=3/> En attente OK qualité</p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DatePVF" value="<?php if($donnes['DatePVF']>'0000-00-01')
-												{ echo $donnes['DatePVF'];}
-												?>"/>
-												
-												</td>
-												</tr>
-																			<tr>
-					<td><label for="FS">Facture Solde :</label></td>
-					<td>
-					
-					 <input type="radio" name="FS" value=1 
-							<?php if ($donnes['FS']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="FS" value=0 
-					<?php if ($donnes['FS']==0){?> checked <?php }?>/> Non 
-<input type="radio" name="FS" value=3 <?php if ($donnes['FS']==3){?> checked <?php }?>/> En attente OK comptable	</p>
+				</td>
+				<td><input type="date" name="DateRDM" value=""/></td>
+				</tr>
+				
+				<td><label for="PVF">PVRF :</label></td>
+				<td>
+					<input type="radio" name="PVF" value=1/> Oui
+					<input type="radio" name="PVF" value=0/> Non 
+					<input type="radio" name="PVF" value=3/>En attente OK qualité</p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateFS" value="<?php if($donnes['DateFS']>'0000-00-01')
-												{ echo $donnes['DateFS'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												
-												<tr>
-												
-												<td><label for="RP">Rapport pédagogique :</label></td>
-					<td>
-					
-					 <input type="radio" name="RP" value=1 
-							<?php if ($donnes['RP']==1){?> checked <?php }?>/> Oui
-						<input type="radio" name="RP" value=0 
-					<?php if ($donnes['RP']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="RP" value=3 <?php if ($donnes['RP']==3){?> checked <?php }?>/> En attente OK qualité</p>
+				</td>
+				<td><input type="date" name="DatePVF" value=""/></td>
+				</tr>
+				
+				<td><label for="FS">Facture Solde :</label></td>
+				<td>
+					<input type="radio" name="FS" value=1/> Oui
+					<input type="radio" name="FS" value=0/> Non 
+					<input type="radio" name="FS" value=3/> En attente OK comptable	</p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateRP" value="<?php if($donnes['DateRP']>'0000-00-01')
-												{ echo $donnes['DateRP'];}
-												?>"/>
+				</td>
+				<td><input type="date" name="DateFS" value=""/></td>
+				</tr>
 												
-												</td>
-												</tr>
-												
-												
-												<tr>
-												
-					<td><label for="QSCrempli">Questionnaire satisfaction Client rempli :</label></td>
-					<td>
-					
-					 <input type="radio" name="QSCrempli" value=1 
-							<?php if ($donnes['QSCrempli']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="QSCrempli" value=0 
-					<?php if ($donnes['QSCrempli']==0){?> checked <?php }?>/> Non 
-<input type="radio" name="QSCrempli" value=3 <?php if ($donnes['QSCrempli']==3){?> checked <?php }?>/> En attente OK qualité					</p>
+				<td><label for="RP">Rapport pédagogique :</label></td>
+				<td>
+				<input type="radio" name="RP" value=1 /> Oui
+				<input type="radio" name="RP" value=0 /> Non  
+				<input type="radio" name="RP" value=3 /> En attente OK qualité</p>
+				</select>
+				</td>
+				<td><input type="date" name="DateRP" value=""/></td>
+				</tr>
+				<tr>
+				<td><label for="QSCrempli">Questionnaire satisfaction Client rempli :</label></td>
+				<td>
+					<input type="radio" name="QSCrempli" value=1/> Oui
+					<input type="radio" name="QSCrempli" value=0 /> Non 
+					<input type="radio" name="QSCrempli" value=3 /> En attente OK qualité</p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateQSC" value="<?php if($donnes['DateQSC']>'0000-00-01')
-												{ echo $donnes['DateQSC'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												
-												
-												<tr>
-												
-					<td><label for="BV">Bulletin de versement :</label></td>
-					<td>
-					
-					 <input type="radio" name="BV" value=1 
-							<?php if ($donnes['BV']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="BV" value=0 
-					<?php if ($donnes['BV']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="BV" value=3 <?php if ($donnes['BV']==3){?> checked <?php }?>/> En attente OK comptable </p>
+				</td>
+				<td><input type="date" name="DateQSC" value=""/></td>
+				</tr>
+				<tr>
+				<td><label for="BV">Bulletin de versement :</label></td>
+				<td>
+					<input type="radio" name="BV" value=1 /> Oui
+					<input type="radio" name="BV" value=0 /> Non  
+					<input type="radio" name="BV" value=3 /> En attente OK comptable </p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateBV" value="<?php if($donnes['DateBV']>'0000-00-01')
-												{ echo $donnes['DateBV'];}
-												?>"/>
+				</td>
+				<td><input type="date" name="DateBV" value=""/></td>
+				</tr>
+				</table>
 												
-												</td>
-												</tr>
+				<label for="QSC">Questionnaire satisfaction client :</label>
+				<textarea name="QSC" class="form-control" rows="10" cols="20"></textarea>
+				<br />
+				<table class="table table-bordered table-striped table-condensed">
+				
+				<tr>
+				<td><label for="FDA">Facture d'accompte :</label></td>
+				<td>
+				<input type="radio" name="FDA" value=3 /> Oui
+				<input type="radio" name="FDA" value=0 /> Non  
+				<input type="radio" name="FDA" value=3 /> En attente OK comptable</p>
+				</select>
+				</td>
+				<td>	
+				<input type="date" name="DateFDA" value=""/>
+				</td>
+				</tr>
 												
-												</table>
-												
-												
-												<label for="QSC">Questionnaire satisfaction client :</label>
-					<textarea name="QSC" class="form-control" rows="10" cols="20"><?php echo $donnes['QSC'];?></textarea>
-					<br />
-												<table class="table table-bordered table-striped table-condensed">
-												<tr>
-					<td><label for="FDA">Facture d'accompte :</label></td>
-					<td>
-					
-					 <input type="radio" name="FDA" value=3 
-							<?php if ($donnes['FDA']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="FDA" value=0 
-					<?php if ($donnes['FDA']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="FDA" value=3 <?php if ($donnes['FDA']==3){?> checked <?php }?>/> En attente OK comptable</p>
+				<tr>
+				<td><label for="PVI">PVRI :</label></td>
+				<td>
+					<input type="radio" name="PVI" value=3 /> Oui
+					<input type="radio" name="PVI" value=0 /> Non  
+					<input type="radio" name="PVI" value=3 /> En attente OK qualité </p>
 					</select>
-					</td>
-					<td>
-					
-					 <input type="date" name="DateFDA" value="<?php if($donnes['DateFDA']>'0000-00-01')
-												{ echo $donnes['DateFDA'];}
-												?>"/>
-												
-												</td>
-												</tr>
-												
-					<tr>
-					<td><label for="PVI">PVRI :</label></td>
-					<td>
-					
-					 <input type="radio" name="PVI" value=3 
-							<?php if ($donnes['PVI']==1 ){?> checked <?php }?>/> Oui
-						<input type="radio" name="PVI" value=0 
-					<?php if ($donnes['PVI']==0){?> checked <?php }?>/> Non  
-					<input type="radio" name="PVI" value=3 <?php if ($donnes['PVI']==3){?> checked <?php }?>/> En attente OK qualité </p>
-					</select>
-					</td>
-					<td>
+				</td>
+				<td>
 					
 					 <input type="date" name="DatePVI" value="<?php if($donnes['DatePVI']>'0000-00-01')
 												{ echo $donnes['DatePVI'];}
